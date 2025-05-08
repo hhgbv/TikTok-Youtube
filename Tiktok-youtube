@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Random Video Redirect</title>
+  <script>
+    const videoLinks = [
+      "https://drive.google.com/file/d/1LfN2G3bm07cB25aoxh85HBakXuQyHUA9/view?usp=sharing",
+      "https://drive.google.com/file/d/1iVRn2PBTCWPKaGZ8o-p-gpm4jROu8vWR/view?usp=sharing",
+      "https://drive.google.com/file/d/1b5aKdXXh7PZ8eE5_7vsdqEkenLbw6yjm/view?usp=sharing",
+      "https://drive.google.com/file/d/1WLaY28vGF1vzjrz4HJMkw6cOHynEYZdd/view?usp=sharing",
+      "https://drive.google.com/file/d/1G86h6NYrf5Zui7TX2t3g-T8TLs1OuVt5/view?usp=sharing"
+      
+    ];
+    window.onload = function () {
+      const randomIndex = Math.floor(Math.random() * videoLinks.length);
+      window.location.href = videoLinks[randomIndex];
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting to a random video...</p>
+</body>
+</html>
